@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<module rename-to = 'helloworld'>
+   <!-- Inherit the core Web Toolkit stuff.                        -->
+   <inherits name = 'com.google.gwt.user.User'/>
+
+   <!-- Inherit the default GWT style sheet.                       -->
+   <inherits name = 'com.google.gwt.user.theme.dark.Dark'/>
+   <!-- Inherit the UiBinder module.                               -->
+   <inherits name = "com.google.gwt.uibinder.UiBinder"/>
+   <!-- Specify the app entry point class.                         -->
+   <entry-point class = "com.HelloWorld.client.HelloWorld"/>
+   	<set-configuration-property name="CssResource.enableGss" value="true" />
+<set-configuration-property name="CssResource.gssDefaultInUiBinder" value="strict" />
+<set-configuration-property name="CssResource.conversionMode" value="off" />
+  
+   <!-- Specify the paths for translatable code                    -->
+   <source path ='client'/>
+   <source path = 'shared'/>
+   <extend-configuration-property name="document.compatMode" value="BackCompat"></extend-configuration-property>
+   <set-configuration-property name="document.compatMode" value="BackCompat"/> 
+   
+
+</module>
